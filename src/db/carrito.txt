@@ -1,0 +1,1 @@
+[{"id":"af54cc52-a277-427a-8711-8fc9398e52aa","timestamp":1670206630129,"productos":[{"id":"fe4f6c4f-54fc-4128-b8d0-1efa3c666e98","timestamp":1670192300633,"name":"nombre","description":"description","code":"code","picture":"picture","price":"price","stock":"stock"}]}]

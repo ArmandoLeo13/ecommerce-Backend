@@ -19,7 +19,7 @@ const getAll = async()=>{
     let contenido 
     let nuevaData 
     try{
-        contenido = await fs.promises.readFile('./db/carrito.txt','utf-8');
+        contenido = await fs.promises.readFile('./src/db/carrito.txt','utf-8');
         nuevaData = JSON.parse(contenido);
         
     }
@@ -47,24 +47,29 @@ const save = async(object)=>{
 
         let dataFinal = JSON.stringify(data);
 
-        fs.promises.writeFile('./db/carrito.txt',dataFinal);
+        fs.promises.writeFile('./src/db/carrito.txt',dataFinal);
     }
     catch (err){
         console.log(err);
     }
 }
 
-const updateProd = async(id,object)=>{
+const aggProd = async(id,object)=>{
     try{
         let data = await getAll();
-        car = await getById(id);
-        car.productos.push(object);          
-        const carIndex = data.findIndex((item) => item.id === (car.id));
-        data.splice(carIndex, 1, car);
 
+        data.forEach(element => {
+            if(element.id===id){
+                element.productos.push(object)
+            }
+        });
+
+        let data2 = data.filter(element=>element.id===id)
         let dataFinal = JSON.stringify(data);
 
-        fs.promises.writeFile('./db/carrito.txt',dataFinal);
+        fs.promises.writeFile('./src/db/carrito.txt',dataFinal);
+
+        return data2
     }
     catch (err){
         console.log(err);
@@ -78,10 +83,11 @@ const deleteById = async(id)=>{
                 return true
             }
         });
+        let data2 = dataFiltrada;
         let dataFinal = JSON.stringify(dataFiltrada);
-        fs.promises.writeFile('./db/carrito.txt',dataFinal);
+        fs.promises.writeFile('./src/db/carrito.txt',dataFinal);
 
-        return nuevaData
+        return data2
     }
     catch(err){console.log(err)}
 }
@@ -95,10 +101,12 @@ const deleteProdId = async(id,id_prod)=>{
             }
         });
 
-        let dataFinal = JSON.stringify(nuevaData);
-        fs.promises.writeFile('./db/carrito.txt',dataFinal);
+        let data2 = nuevaData.filter(element=>element.id===id)
 
-        return nuevaData
+        let dataFinal = JSON.stringify(nuevaData);
+        fs.promises.writeFile('./src/db/carrito.txt',dataFinal);
+
+        return data2
     }
     catch(err){console.log(err)}
 }
@@ -122,16 +130,15 @@ carritoRouter.get('/:id/productos', (request, response) => {
     (async () => {
         car = await getById(request.params.id);
 
-        response.json(car)
+        response.json(car.productos)
       })();
 });
 
 carritoRouter.post('/:id/productos', (request, response) => {
     (async () => {
-        updateProd(request.params.id,request.body)
-        car =  await getById(request.params.id)
-        
-        response.json(request.body)
+        car = await aggProd(request.params.id,request.body)
+
+        response.json(car)
       })();
 });
 carritoRouter.delete('/:id/productos/:id_prod', (request, response) => {

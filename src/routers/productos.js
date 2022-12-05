@@ -28,7 +28,7 @@ const getAll = async()=>{
     let contenido 
     let nuevaData 
     try{
-        contenido = await fs.promises.readFile('./db/productos.txt','utf-8');
+        contenido = await fs.promises.readFile('./src/db/productos.txt','utf-8');
         nuevaData = JSON.parse(contenido);
         
     }
@@ -42,7 +42,7 @@ const getById = async(ide)=>{
     try{
         let nuevaData = await getAll();
         let dataCorregida = nuevaData.find(({ id })=> id === ide)
-        console.log(dataCorregida);
+        
         return dataCorregida
     }
     catch(err){console.log(err)}
@@ -56,7 +56,9 @@ const save = async(object)=>{
 
         let dataFinal = JSON.stringify(data);
 
-        fs.promises.writeFile('./db/productos.txt',dataFinal);
+        fs.promises.writeFile('./src/db/productos.txt',dataFinal);
+
+        return data
     }
     catch (err){
         console.log(err);
@@ -70,8 +72,8 @@ const update = async(object)=>{
 
         let dataFinal = JSON.stringify(data);
 
-        fs.promises.writeFile('./db/productos.txt',dataFinal);
-
+        fs.promises.writeFile('./src/db/productos.txt',dataFinal);
+        return data
     }
     catch (err){
         console.log(err);
@@ -85,10 +87,11 @@ const deleteById = async(id)=>{
                 return true
             }
         });
+        let data2 = dataFiltrada;
         let dataFinal = JSON.stringify(dataFiltrada);
-        fs.promises.writeFile('./db/productos.txt',dataFinal);
+        fs.promises.writeFile('./src/db/productos.txt',dataFinal);
 
-        return "Se elimino el id "+id
+        return data2
     }
     catch(err){console.log(err)}
 }
@@ -110,22 +113,26 @@ productosRouter.get('/:id', (request, response) => {
 
 productosRouter.post('/', (request, response) => {
     if(admin==true){
-        const newProduct = new Productos(id=randomUUID(),timestamp=Date.now(),request.body.name,request.body.description,request.body.code,request.body.picture,request.body.price,request.body.stock)
 
-    save(newProduct);
-    response.json(newProduct)
+        (async () => {
+            const newProduct = new Productos(id=randomUUID(),timestamp=Date.now(),request.body.name,request.body.description,request.body.code,request.body.picture,request.body.price,request.body.stock)
+
+            pro = await save(newProduct);
+            
+            response.json(pro)
+          })();
     }else{
         response.json({ error:-1, descripcion: `ruta ${request.baseUrl} método ${request.method} no autorizada`})
     }
     
 });
 
-productosRouter.put('/:id&:admin', (request, response) => {
+productosRouter.put('/:id', (request, response) => {
     if(admin===true){
         (async () => {
-            update(request.body);
+            pro = await update(request.body);
             
-            response.json(request.body)
+            response.json(pro)
           })();
     }else{
         response.json({ error:-1, descripcion: `ruta ${request.baseUrl} método ${request.method} no autorizada`})
@@ -133,10 +140,14 @@ productosRouter.put('/:id&:admin', (request, response) => {
     
   });
 
-productosRouter.delete('/:id&:admin', (request, response) => {
+productosRouter.delete('/:id', (request, response) => {
     if(admin===true){
-        deleteById(request.params.id)
-        response.json();
+        
+        (async () => {
+            pro = await deleteById(request.params.id);
+            response.json(pro);
+          })();
+        
     }else{
         response.json({ error:-1, descripcion: `ruta ${request.baseUrl} método ${request.method} no autorizada`})
     }

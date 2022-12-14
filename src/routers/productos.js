@@ -3,7 +3,7 @@ const { Router, response } = require('express');
 const fs = require('fs');
 let pro;
 
-let admin=true;
+let admin=false;
 
 const productosRouter = Router();
 

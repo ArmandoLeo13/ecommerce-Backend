@@ -1,19 +1,18 @@
-const { response } = require('express');
-const express = require('express');
-const ProductosDaoMemoria = require('./daos/productos/ProductosDaoMemoria');
-const CarritoDaoMemoria = require('./daos/carritos/CarritosDaoMemoria');
-const ProductosDaoArchivo = require('./daos/productos/ProductosDaoArchivo');
-const CarritoDaoArchivo = require('./daos/carritos/CarritosDaoArchivo');
-const ProductosDaoDB = require('./daos/productos/ProductosDaoDB');
-const CarritoDaoDB = require('./daos/carritos/CarritosDaoDB');
+import express from 'express';
+import {ProductosDaoDB} from './daos/productos/ProductosDaoDB.js';
+import {CarritoDaoDB} from './daos/carritos/CarritosDaoDB.js';
+import { login } from './daos/login/login.js';
+import { signup } from './daos/signup/signup.js';
 
 const app = express();
-const port = 8080;
+const port = process.argv.port || 8080;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
+app.use('/signup',signup);
+app.use('/login',login);
 app.use('/api/productos', ProductosDaoDB);
 app.use('/api/carrito', CarritoDaoDB);
 

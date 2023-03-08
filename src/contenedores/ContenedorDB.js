@@ -1,5 +1,4 @@
-const { response } = require('express');
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
  
 const productosCollection = 'productos';
 
@@ -25,7 +24,7 @@ const carritosSchemma = new mongoose.Schema({
 const carritos = mongoose.model(carritosCollection,carritosSchemma);
 
 
-class ContenedorDB{
+export default class ContenedorDB{
 
     constructor(tipo){
         this.tipo=tipo
@@ -179,5 +178,3 @@ class ContenedorDB{
     }
 
 }
-
-module.exports = ContenedorDB;

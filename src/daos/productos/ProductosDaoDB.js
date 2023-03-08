@@ -1,5 +1,5 @@
-const { Router, response } = require('express');
-const ContenedorDB = require('../../contenedores/ContenedorDB');
+import { Router, response } from 'express';
+import  ContenedorDB from '../../contenedores/ContenedorDB.js';
 const contenedor = new ContenedorDB('producto');
 
 contenedor.conectDB();
@@ -57,5 +57,4 @@ ProductosDaoDB.put('/:id', async (request, response) => {
   
 });
 
-
-module.exports = ProductosDaoDB;
+export {ProductosDaoDB};

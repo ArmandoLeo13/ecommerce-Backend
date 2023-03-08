@@ -1,5 +1,5 @@
-const { Router, response } = require('express');
-const ContenedorDB = require('../../contenedores/ContenedorDB');
+import { Router, response } from 'express';
+import ContenedorDB from '../../contenedores/ContenedorDB.js';
 const contenedor = new ContenedorDB('carrito');
 
 contenedor.conectDB();
@@ -35,4 +35,4 @@ CarritoDaoDB.delete('/:id/productos/:id_prod', async (request, response) => {
     
 });
 
-module.exports = CarritoDaoDB;
+export {CarritoDaoDB};

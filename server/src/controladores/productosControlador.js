@@ -24,7 +24,7 @@ export const postProducto = async (req, res) => {
     const data = await ProductoServicios.createProducto(req.body);
 
     if(data){
-        res.status(201).json(data);
+        res.status(201).json(productoDto(data));
     }else{
         res.status(500).json({mensaje: "No se pudo crear producto"});
     }
@@ -43,9 +43,11 @@ export const deleteProductoById = async (req, res) => {
 export const updateProductoById = async (req, res) => {
     const {id} = req.params;
     const newData = req.body;
+    
     const data = await ProductoServicios.updateProductoById(id, newData);
-    if(data.length>0){
-        res.status(200).json(data);
+    
+    if(data){
+        res.status(200).json(productoDto(data));
     }else{
         res.status(500).json({mensaje: "No se pudo actualizar producto"});
     }

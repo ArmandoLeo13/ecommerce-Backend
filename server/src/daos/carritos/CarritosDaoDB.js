@@ -23,11 +23,12 @@ class CarritoDaoDB extends ContenedorDB{
     }
     async aggProductoInCarrito (id_carrito, newProduto) {
         try{
+            let resPreview = true;
             const carrito = await this.getById(id_carrito);
             
             const { price, stock} = await productServices.getProdutoById(newProduto._id);
 
-            if(stock>0){
+            if(stock>0 && stock>=newProduto.cantidad){
 
                 if(carrito.productos.length===0){
                     const producto = {
@@ -52,6 +53,9 @@ class CarritoDaoDB extends ContenedorDB{
                                 diff = pro.priceT - diff;
                                 
                                 carrito.costoT = carrito.costoT + diff;
+                                if(pro.cantidad>stock){
+                                    resPreview=false;
+                                }
                             }
                         });
                     }else{
@@ -67,9 +71,14 @@ class CarritoDaoDB extends ContenedorDB{
                         carrito.productos.push(producto);
                     }
                 }
-                const data = await this.updateById(id_carrito,carrito);
+                if(resPreview){
+                    const data = await this.updateById(id_carrito,carrito);
 
-                return data;
+                    return data;
+                }else{
+                    return resPreview;
+                }
+                
 
             }else{
                 const data = false;

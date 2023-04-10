@@ -1,0 +1,11 @@
+{"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot read properties of null (reading 'productos')"}
+{"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot read properties of null (reading 'productos')"}
+{"level":"error","message":"Error en aggProductoInCarrito(): ReferenceError: Cannot access '_id' before initialization"}
+{"level":"error","message":"Error en aggProductoInCarrito(): ReferenceError: Cannot access '_id' before initialization"}
+{"level":"error","message":"Error en aggProductoInCarrito(): ReferenceError: data is not defined"}
+{"level":"error","message":"Error en deleteProdutoInCarrito(): ReferenceError: id is not defined"}
+{"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot read properties of undefined (reading 'costoT')"}
+{"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot read properties of undefined (reading 'priceT')"}
+{"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot read properties of undefined (reading 'priceT')"}
+{"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot read properties of undefined (reading 'priceT')"}
+{"level":"error","message":"Error en aggProductoInCarrito(): TypeError: Cannot read properties of null (reading 'productos')"}

@@ -13,8 +13,8 @@ export const getAllProductos = async (req, res) => {
 export const getProdutoById = async (req, res) => {
     const {id} = req.params;
     const data = await ProductoServicios.getProdutoById(id);
-    if(data.length>0){
-        res.status(200).json(data);
+    if(data){
+        res.status(200).json(productoDto(data));
     }else{
         res.status(404).json({mensaje: "Producto no existe"});
     }

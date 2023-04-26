@@ -5,8 +5,8 @@ import client from '../config/twilioConfig.js';
 import ordenDto from '../dto/ordenDto.js';
 
 export const getAllOrdenesUser = async (req, res) => {
-    
-    const data = await OrdenServices.getAllOrdenesUser(req.body.userMail);
+    const { userMail } = req.params;
+    const data = await OrdenServices.getAllOrdenesUser(userMail);
 
     if(data.length>0){
         res.status(200).json(data.map((orden)=> ordenDto(orden)));
@@ -33,7 +33,7 @@ export const postOrder = async (req, res) => {
             from: process.env.NUMBER_FROM_WS,
             to: process.env.NUMBER_TO_WS
         });
-        res.status(201).json(data);
+        res.status(201).json(ordenDto(data));
     }else{
         res.status(500).json({mensaje: "No se pudo crear la orden"});
     }

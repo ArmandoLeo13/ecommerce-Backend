@@ -109,6 +109,19 @@ class CarritoDaoDB extends ContenedorDB{
             logger.error(`Error en deleteProdutoInCarrito(): ${error}`);
         }
     }
+    async vaciarCarrito(id_carrito){
+        try{
+            
+            const carrito = await this.getById(id_carrito);
+            carrito.productos = [];
+            carrito.costoT=0;
+            const data = await this.updateById(id_carrito,carrito);
+
+            return data;
+        }catch(error){
+            logger.error(`Error en deleteProdutoInCarrito(): ${error}`);
+        }
+    }
 }
 
 export default CarritoDaoDB;

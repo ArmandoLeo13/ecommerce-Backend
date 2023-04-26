@@ -5,6 +5,10 @@ export const getCarritoById = async (_id) => {
     return data;
 }
 
+export const getCarritoByEmail = async (email) => {
+    const data = await Carrito.getByField('userEmail',email);
+    return data
+}
 export const createCarrito = async (data) => {
     const {userEmail,timestamp 
         = Date.now(), productos =[], costoT=0} = data;
@@ -19,7 +23,7 @@ export const deleteCarritoById = async (_id) => {
 }
 
 export const getProdutosInCarrito = async (_id) => {
-    const res = await Carrito.getProdutosInCarrito(id);
+    const res = await Carrito.getProdutosInCarrito(_id);
 
     return res;
 }
@@ -33,6 +37,13 @@ export const aggProductoInCarrito = async (_id, newProducto) => {
 export const deleteProdutoInCarrito = async (_id, id_prod) => {
     
     const res = await Carrito.deleteProdutoInCarrito(_id, id_prod);
+
+    return res;
+}
+
+export const vaciarCarrito = async (_id) => {
+    
+    const res = await Carrito.vaciarCarrito(_id);
 
     return res;
 }

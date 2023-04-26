@@ -11,10 +11,10 @@ export const getProdutoById = async (id) => {
 }
 
 export const createProducto = async (data) => {
-    const {timestamp = Date.now(), name, description, code, picture,
-        price, stock} = data;
-    const res = await Produtos.save({timestamp, name, description, code, picture,
-        price, stock})
+    const {timestamp = Date.now(), name, description,
+        price, stock, picture, categoria} = data;
+    const res = await Produtos.save({timestamp, name, description,
+        price, stock, picture, categoria })
     return res;
 
 }

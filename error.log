@@ -9,3 +9,140 @@
 {"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot read properties of undefined (reading 'priceT')"}
 {"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot read properties of undefined (reading 'priceT')"}
 {"level":"error","message":"Error en aggProductoInCarrito(): TypeError: Cannot read properties of null (reading 'productos')"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt must be provided"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt must be provided"}
+{"level":"error","message":"Error en aggProductoInCarrito(): TypeError: Cannot read properties of undefined (reading '_id')"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: invalid token"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: TypeError: Cannot read properties of undefined (reading 'filename')"}
+{"level":"error","message":"Error en register: Error: data and salt arguments required"}
+{"level":"error","message":"Error en register: Error: data and salt arguments required"}
+{"level":"error","message":"Error en register: Error: data and salt arguments required"}
+{"level":"error","message":"Error en getById(): CastError: Cast to ObjectId failed for value \"test1004@m.com\" (type string) at path \"_id\" for model \"carritos\""}
+{"level":"error","message":"Error en getById(): CastError: Cast to ObjectId failed for value \"test1004@m.com\" (type string) at path \"_id\" for model \"carritos\""}
+{"level":"error","message":"Error en getById(): CastError: Cast to ObjectId failed for value \"test1004@m.com\" (type string) at path \"_id\" for model \"carritos\""}
+{"level":"error","message":"Error en aggProductoInCarrito(): TypeError: Cannot read properties of null (reading 'productos')"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en aggProductoInCarrito(): TypeError: Cannot read properties of null (reading 'productos')"}
+{"level":"error","message":"Error en aggProductoInCarrito(): TypeError: Cannot read properties of null (reading 'productos')"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en deleteProdutoInCarrito(): TypeError: Cannot set properties of null (setting 'productos')"}
+{"level":"error","message":"Error en verifyToken(): TokenExpiredError: jwt expired"}
+{"level":"error","message":"Error en verifyToken(): TokenExpiredError: jwt expired"}
+{"level":"error","message":"Error en verifyToken(): TokenExpiredError: jwt expired"}
+{"level":"error","message":"Error en verifyToken(): TokenExpiredError: jwt expired"}
+{"level":"error","message":"Error en save(): ValidationError: userEmail: Path `userEmail` is required., name: Path `name` is required., text: Path `text` is required."}
+{"level":"error","message":"Error en save(): ValidationError: uuid: Path `uuid` is required."}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): JsonWebTokenError: jwt malformed"}
+{"level":"error","message":"Error en verifyToken(): TokenExpiredError: jwt expired"}
+{"level":"error","message":"Error en verifyToken(): TokenExpiredError: jwt expired"}
+{"level":"error","message":"Error en verifyToken(): TokenExpiredError: jwt expired"}
+{"level":"error","message":"Error en verifyToken(): TokenExpiredError: jwt expired"}

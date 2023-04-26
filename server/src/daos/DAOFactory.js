@@ -2,12 +2,14 @@ import ProductosDaoDB from "./productos/ProductosDaoDB.js";
 import CarritoDaoDB from "./carritos/CarritosDaoDB.js";
 import UserDaoDB from "./users/UserDaoDB.js";
 import OrderDaoDB from "./ordenes/OrderDaoDB.js";
+import MensajesDaoDB from "./mensajes/MensajesDaoDB.js";
 
 export default class DAOFactory {
   static productosDao = null;
   static carritoDao = null;
   static userDao = null;
   static orderDao = null;
+  static mensajesDao = null;
 
   static getProductosDao() {
     if (!DAOFactory.productosDao) {
@@ -35,6 +37,13 @@ export default class DAOFactory {
       DAOFactory.orderDao = new OrderDaoDB();
     }
     return DAOFactory.orderDao;
+  }
+
+  static getMensajesDao() {
+    if (!DAOFactory.mensajesDao) {
+      DAOFactory.mensajesDao = new MensajesDaoDB();
+    }
+    return DAOFactory.mensajesDao;
   }
 }
 

@@ -1,4 +1,4 @@
-import app from "./app.js";
+import httpServer from "./app.js";
 import cluster from 'cluster';
 import os from 'os';
 
@@ -13,7 +13,7 @@ if(modoCluster && cluster.isPrimary){
 }else{
     const port = process.argv.port || 8080;
 
-  app.listen(port, () => {
+    httpServer.listen(port, () => {
     console.log(`Worker ${process.pid} listening on port ${port}`);
   });
 }

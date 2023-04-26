@@ -7,7 +7,8 @@ class ProductosDaoDB extends ContenedorDB{
             name: { type: String, required: true},
             description: String,
             price: { type: Number, required: true},
-            stock: Number,
+            stock: { type: Number, required: true},
+            picture: String,
             categoria: { type: String, required: true}
         })
     }

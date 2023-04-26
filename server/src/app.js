@@ -61,11 +61,11 @@ passport.deserializeUser(async (id, done) => {
   return done(null, user);
 });
 
-app.use('chat', MensajeRouter);
-app.use('/api/auth', authRouter);
-app.use('/api/productos', ProductosRouter);
-app.use('/api/carrito', CarritoRouter);
-app.use('/api/orden', OrderRouter);
+app.use('/chat', MensajeRouter);
+app.use('/auth', authRouter);
+app.use('/productos', ProductosRouter);
+app.use('/carrito', CarritoRouter);
+app.use('/orden', OrderRouter);
 
 app.use('*',(req, res)=>{
     res.status(405).json({ mensaje:`ruta ${req.baseUrl} método ${req.method} no implementada`})

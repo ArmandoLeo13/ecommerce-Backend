@@ -37,8 +37,6 @@ app.use(passport.session());
 
 
 io.on('connection', async (socket) => {
-  console.log('conecto');
-  console.log(socket.id);
 
   let mensajes = await MensajeServicio.getAllMsg();
   io.sockets.emit('mensajes', mensajes);

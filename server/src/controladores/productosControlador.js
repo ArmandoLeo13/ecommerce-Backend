@@ -52,3 +52,15 @@ export const updateProductoById = async (req, res) => {
         res.status(500).json({mensaje: "No se pudo actualizar producto"});
     }
 }
+
+export const getProductosByCategoria = async (req, res) => {
+    const { categoria } = req.params;
+
+    const data = await ProductoServicios.getProductosByCategoria(categoria);
+
+    if(data.length>0){
+        res.status(200).json(data.map((pro)=> productoDto(pro)));
+    }else{
+        res.status(404).json({mensaje: "No hay productos para esa categoria"});
+    }
+}

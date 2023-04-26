@@ -30,3 +30,9 @@ export const updateProductoById = async (id, newData) => {
 
     return res;
 }
+
+export const getProductosByCategoria = async (categoria) => {
+    const res = await Produtos.getByFieldMany('categoria', categoria);
+
+    return res;
+}
